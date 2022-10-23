@@ -18,7 +18,6 @@ correlation = [
 def get_portfolio_std_dev(weights):
 
     portfolio_variance = 0
-
     for i in range(stocks_count):
         portfolio_variance = portfolio_variance + weights[i] * weights[i] * std_dev[i] * std_dev[i]
 
@@ -32,8 +31,8 @@ def get_portfolio_std_dev(weights):
 
 
 def get_portfolio_returns(weights):
-    portfolio_returns = 0
 
+    portfolio_returns = 0
     for i in range(stocks_count):
         portfolio_returns = portfolio_returns + weights[i] * mean_returns[i]
 
